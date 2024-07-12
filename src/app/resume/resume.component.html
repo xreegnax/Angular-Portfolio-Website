@@ -1,0 +1,149 @@
+<div class="container text-center"><br>
+    <!-- <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button> -->
+    <a href="../../assets/Resume.pdf" download="Resume.pdf" class="btn btn-primary mb-5 shadow border"><b>Download PDF Resume</b> </a>
+
+    <accordion>
+        <accordion-group [(isOpen)]="isWorkExperienceOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;"></div>
+                <!-- <div class="btn-link">Experience and Internships</div> -->
+                <h5 class="text-white">Experience and Internships</h5>
+
+                <div style="width: 10.95px">
+                    <div *ngIf="!isWorkExperienceOpen" style="color: white"></div>
+                    <div *ngIf="isWorkExperienceOpen" style="color: white"></div>
+                </div>
+            </button>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Software Developer Intern</h2>
+                <h3 class="text-primary">Intellect Aesign Arena</h3>
+                <ul>
+                    <li>January 2024 - July 2024</li>
+                    <li>Chennai, Tamil Nadu</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Team Lead</h2>
+                <h3 class="text-primary">Smart India Hackathon 2023</h3>
+                <ul>
+                    <li>December 2023</li>
+                    <li>Chittoor, Andrapradesh</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Team Lead</h2>
+                <h3 class="text-primary">'Hack N Lead' - National level Hackathon</h3>
+                <ul>
+                    <li>June 2023</li>
+                    <li>Mysore, Karnataka</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Team Lead</h2>
+                <h3 class="text-primary">Volunteering Internship</h3>
+                <ul>
+                    <li>August 2022</li>
+                    <li>Amrita Hospital, Faridabad</li>
+                </ul>
+            </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="isEducationOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;"></div>
+                <!-- <div class="btn-link">Education</div> -->
+                <h5 class="text-white">Education</h5>
+
+                <div style="width: 10.95px">
+                    <div *ngIf="!isEducationOpen" style="color: white"></div>
+                    <div *ngIf="isEducationOpen" style="color: white"></div>
+                </div>
+            </button>
+
+            <div style="text-align: left;">
+                <h3>Integrated Master of Computer Application</h3>
+                <ul>
+                    <li>2019 - 2024</li>
+                    <li>Amrita Vishwa Vidhyapeetham University</li>
+                </ul>
+            </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="isCertificationsOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;"></div>
+                <!-- <div class="btn-link">Certifications and Hackathons</div> -->
+                <h5 class="text-white">Certifications and Hackathons</h5>
+
+                <div style="width: 10.95px">
+                    <div *ngIf="!isCertificationsOpen" style="color: white"></div>
+                    <div *ngIf="isCertificationsOpen" style="color: white"></div>
+                </div>
+            </button>
+
+            <div style="text-align: left;">
+                <h3>Smart India Hackathon</h3>
+                <ul>
+                    <li>December 2023</li>
+                    <li>Ministry of Home Affairs, Government of India</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h3>CODATHON - Intra College Coding Competition: Winner</h3>
+                <ul>
+                    <li>May 2023</li>
+                    <li>Amrita Vishwa Vidhyapeetham, Mysore</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h3>Hack N Lead - National Level Hackathon: Runner Up</h3>
+                <ul>
+                    <li>June 2023</li>
+                    <li>Vidyavardhaka College of Engineering, Mysore</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h3>SYMBIOT - National Level Hackathon</h3>
+                <ul>
+                    <li>June 2022</li>
+                    <li>Vidyavardhaka College of Engineering, Mysore</li>
+                </ul>
+            </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="isSkillsOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;"></div>
+                <!-- <div class="btn-link">Skills</div> -->
+                <h5 class="text-white">Skills</h5>
+                
+
+                <div style="width: 10.95px">
+                    <div *ngIf="!isSkillsOpen" style="color: white"></div>
+                    <div *ngIf="isSkillsOpen" style="color: white"></div>
+                </div>
+            </button>
+
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Deep-Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Angular JS</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Creativity</li>
+                        <li>Emotional Intelligence</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </accordion-group>
+    </accordion>
+</div>
